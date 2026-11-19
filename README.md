@@ -11,6 +11,13 @@ A headless root module for the Samsung Galaxy A52s 5G that uses Android's native
 - Uses fabricated Android Runtime Resource Overlays (RROs).
 - The one-time SystemUI restart causes a brief status-bar/SystemUI refresh.
 
+## Preview
+
+Illustrative renders showing the camera cutout before and after the ring is applied; these are not screenshots captured from a device.
+
+| Before | After |
+| --- | --- |
+| <img src="camera-ring-before.png" alt="Illustrative phone display with the front camera cutout and no added ring" width="420"> | <img src="camera-ring-after.png" alt="Illustrative phone display with a bold black ring around the front camera cutout" width="420"> |
 
 ## Compatibility
 
