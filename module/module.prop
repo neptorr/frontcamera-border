@@ -1,6 +1,6 @@
 id=cameraring_native_a52sxq
 name=Camera Ring - Native SystemUI (A52s)
-version=0.5.8
-versionCode=18
+version=0.6.4
+versionCode=24
 author=neptorr
-description=Fixes bottom-clipped camera protection view on Galaxy A52s while keeping the ring centered.
+description=Increases the camera protection ring radius to 44 pixels and reloads SystemUI after overlay setup.
