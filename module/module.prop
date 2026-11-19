@@ -1,0 +1,6 @@
+id=cameraring_native_a52sxq
+name=Camera Ring - Native SystemUI (A52s)
+version=0.5.8
+versionCode=18
+author=neptorr
+description=Fixes bottom-clipped camera protection view on Galaxy A52s while keeping the ring centered.
