@@ -1,39 +1,44 @@
 # Front Camera Border
 
-A lightweight Magisk module for the **Samsung Galaxy A52s 5G** that displays a subtle black ring around the front-camera cutout only while the front camera is active.
+A root module for the **Samsung Galaxy A52s 5G** that enables Android's native SystemUI camera protection ring around the front camera cutout.
 
-## Features
+## Latest version
 
-- Uses Android's native fabricated Runtime Resource Overlays (RRO).
-- Automatically detects front-camera activity.
-- Shows the cutout ring while the front camera is in use and hides it when the camera closes.
-- Starts automatically after boot through Magisk.
-- No companion APK required.
+**v0.5.8** — fixes the cutout protection view being clipped at the bottom on the tested A52s ROM. The ring is centered around the camera hole and follows SystemUI's native camera activity callback.
+
+- No companion app; nothing appears in the app drawer.
+- No camera polling or periodic enable/disable loop.
+- Uses fabricated Android Runtime Resource Overlays (RROs).
+- Module author: **neptorr**.
 
 ## Compatibility
 
-- Device: Samsung Galaxy A52s 5G
-- Root: Magisk
-- Display resolution: 1080 × 2400
-- Front camera ID tested: `1`
+- Device: Samsung Galaxy A52s 5G (SM-A528B / a52sxq)
+- Root manager: Magisk or compatible root module installer
+- Display: 1080 × 2400, tested configuration
+- Camera ID: `1` (front camera on the tested build)
+- ROM must include SystemUI camera protection support.
 
-Camera IDs can vary by device firmware. The included configuration targets the tested front camera ID.
+Other ROMs or camera ID mappings may differ. This module applies a SystemUI cutout configuration and a framework cutout-fill setting; it does not replace camera software or change camera selection.
 
-## Installation
+## Install
 
-1. Download the latest Magisk ZIP from the repository.
-2. Open Magisk and choose **Modules → Install from storage**.
-3. Select the ZIP and reboot.
-4. Open the front camera to test the ring.
+1. Download `CameraRing-A52s-Native-v0.5.8.zip` from the v0.5.8 release.
+2. In Magisk, open **Modules → Install from storage** and select the ZIP.
+3. Reboot the phone.
+4. Open any app using the front camera to check the ring.
 
-## Uninstallation
+The module is headless and should not show an app icon in the launcher.
 
-Remove the module from Magisk and reboot.
+## Remove
 
-## How it works
+Uninstall the module in Magisk and reboot. Its uninstall script disables only the fabricated overlays created by this module and the superseded ring-path overlay.
 
-The module creates native Android fabricated overlays for the display cutout and monitors active camera clients. It enables the overlays when the tested front camera is active and disables them when it is no longer active.
+## Source
+
+- [Module source](module/)
+- [Changelog](CHANGELOG.md)
 
 ## License
 
-This project is licensed under the MIT License. See [LICENSE](LICENSE).
+MIT. See [LICENSE](LICENSE).
