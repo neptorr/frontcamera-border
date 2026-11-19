@@ -101,7 +101,7 @@ ensure_overlay() {
     return 1
 }
 
-log "Camera Ring Native v0.6.2 service started; applies the 1px thicker path and reloads SystemUI after configuration."
+log "Camera Ring Native v0.6.4 service started; applies the 44px protection path and reloads SystemUI after configuration."
 wait_for_overlay_service || exit 0
 ensure_overlay "$TARGET" SystemUI A52sNativeRingEnable com.android.systemui:bool/config_enableDisplayCutoutProtection 0x12 1 || exit 0
 ensure_overlay "$TARGET" SystemUI A52sNativeRingCameraId com.android.systemui:string/config_protectedCameraId string 1 || exit 0
