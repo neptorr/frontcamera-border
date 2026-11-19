@@ -31,7 +31,7 @@ Other ROMs or camera-ID mappings may differ. This module configures SystemUI's n
 
 ## Install
 
-1. Download [CameraRing-A52s-Native-v0.6.4.zip](CameraRing-A52s-Native-v0.6.4.zip).
+1. Download CameraRing-A52s-Native-v0.6.4.zip .
 2. Install it as an update in ReSukiSu/KernelSU or your compatible root module manager.
 3. Reboot the phone.
 4. Open an app using the front camera and check the ring.
