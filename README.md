@@ -4,13 +4,13 @@ A headless root module for the Samsung Galaxy A52s 5G that uses Android's native
 
 ## Latest version
 
-**v0.6.4** increases the protection circle radius to 44 px, three pixels more than v0.6.3. It also fixes overlay setup on the tested ReSukiSu/KernelSU ROM and restarts SystemUI once so its camera-protection listener reloads the configured path.
+**v0.6.4** increases the protection circle radius to 44 px. It also fixes overlay setup on the tested ReSukiSu/KernelSU ROM and restarts SystemUI once so its camera-protection listener reloads the configured path.
 
 - No companion app or launcher icon.
 - No camera polling or periodic overlay toggling. SystemUI handles camera availability.
 - Uses fabricated Android Runtime Resource Overlays (RROs).
 - The one-time SystemUI restart causes a brief status-bar/SystemUI refresh.
-- Module author: **neptorr**.
+
 
 ## Compatibility
 
